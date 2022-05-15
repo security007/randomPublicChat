@@ -36,6 +36,4 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('image', validator.escape(username),image);
     })
 });
-server.listen(port, () => {
-  console.log(`App listening on port ${host}:${port}`)
-})
+server.listen();
